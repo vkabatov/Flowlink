@@ -19,10 +19,25 @@ https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-netwo
 
 
 ## Setup
-![Alt text](/Images/vds-edit-netflow.png?raw=true "Select VDS")
+Right-click the VDS >> Settings >> Edit NetFlow
+
+![Alt text](/Images/vds-edit-netflow.png?raw=true "Select VDS Netflow Settings")
+
+Specify Collector IP (Flowlink) address
+
+Set sampling rate to 0
+
 ![Alt text](/Images/vds-config.png?raw=true "VDS Configuration")
+
+Right-click the dvPG >> Edit Settings
+
+![Alt text](/Images/dvpg-settings.png?raw=true "Select dvPG Settings")
+
+Under Monitoring, set NetfFlow to Enabled
+
 ![Alt text](/Images/dvpg-config.png?raw=true "dvPG Configuration")
 
+Enable Netflow (last step above) on uplink port group (DVUplinks)
 ---------------
 Important!!
 To enable NetFlow on a vSphere Distributed Switch (VDS) port group for bidirectional traffic monitoring, enable NetFlow on both the port group and the uplink port groups to capture traffic entering and exiting the virtual network. 
