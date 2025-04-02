@@ -158,3 +158,5 @@ Stop Flowlink service
 ```
 illumio-flowlink-ctl stop
 ```
+## Final thoughts
+Make sure to create unmanaged workloads or flows will not appear in the PCE!

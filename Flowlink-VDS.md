@@ -19,4 +19,11 @@ https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-netwo
 
 
 ## Setup
-![Alt text](/Images/vds-edit-netflow.png?raw=true "Optional Title")
+![Alt text](/Images/vds-edit-netflow.png?raw=true "Select VDS")
+![Alt text](/Images/vds-config.png?raw=true "VDS Configuration")
+![Alt text](/Images/dvpg-config.png?raw=true "dvPG Configuration")
+
+---------------
+Important!!
+To enable NetFlow on a vSphere Distributed Switch (VDS) port group for bidirectional traffic monitoring, enable NetFlow on both the port group and the uplink port groups to capture traffic entering and exiting the virtual network. 
+---------------
