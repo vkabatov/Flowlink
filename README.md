@@ -4,8 +4,25 @@ illumio Flowlink install, config, troubleshoot notes
  Author: Vlad Kabatov, illumio, inc.
  Version 2025.04.02
 ```
+## Quick command reference
+```
+less /usr/local/illumio/data/flowlink-log
+```
+```
+tail -f /usr/local/illumio/data/flowlink-log
+```
+```
+illumio-flowlink-ctl status
+```
+```
+illumio-flowlink-ctl start --config /usr/local/illumio/data/config.yaml --log-file /usr/local/illumio/data/flowlink-log
+```
+```
+illumio-flowlink-ctl stop
+```
+
 ## Collection of Flowlink notes and install links
-Deploy and configure Supported Linux OS for FlowLink
+Deploy and configure Supported Linux OS for Flowlink
 ```
 https://support.illumio.com/shared/software/os-support-package-dependencies/flowlink.html
 ```
@@ -14,11 +31,11 @@ Download the latest Flowlink RPM package
 ```
 https://support.illumio.com/software/download.html#flowlink/download/
 ```
-Install FlowLink
+## Install Flowlink
 ```
 https://product-docs-repo.illumio.com/Tech-Docs/Core/24.4/Install-Upgrade/out/en/flowlink-configuration-and-usage/flowlink-configuration/configure-flowlink.html
 ```
-copy flowlink to /tmp and install
+Copy flowlink to /tmp and install
 ```
 cd /tmp
 sudo su
@@ -32,17 +49,21 @@ reboot
 ```
 https://product-docs-repo.illumio.com/Tech-Docs/Core/24.2/Install-Upgrade-Admin/out/en/flowlink-configuration-and-usage/flowlink-configuration/configure-yaml.html
 ```
-Data directory (used in these configuration examples):
+Data directory used in these examples:
 ```
 /usr/local/illumio/data/
 ```
 ### Configure api user
 Users in this example have Global Org Owner permissions
-On the PCE, navigate to:
+
+on the PCE, navigate to:
+
 Access >> Service Accounts >> Add
+
 Create a service account and copy Authentication Auth Username/Secret
 
 Alternatively, to create API Keys:
+
 Top right-hand corner button with username >> My API Keys >> Add
 
 File containing the api_key:
@@ -135,4 +156,3 @@ Stop Flowlink service
 ```
 illumio-flowlink-ctl stop
 ```
-
