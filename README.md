@@ -90,7 +90,7 @@ Cleanup the yaml file and delete unnecessary consumers.
 /usr/local/illumio/data/config.yaml
 ```
 Update values for:
--------------------------
+|-----------------------|
 |    pce_addr           |
 |    api_key (location) |
 |    data_directory     |
