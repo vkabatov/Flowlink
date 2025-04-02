@@ -54,9 +54,9 @@ Data directory used in these examples:
 /usr/local/illumio/data/
 ```
 ### Configure api user
-Users in this example have Global Org Owner permissions
+Users in this example have Global Org Owner permissions.
 
-on the PCE, navigate to:
+On the PCE, navigate to:
 
 Access >> Service Accounts >> Add
 
@@ -66,36 +66,38 @@ Alternatively, to create API Keys:
 
 Top right-hand corner button with username >> My API Keys >> Add
 
-File containing the api_key:
+Create a file (if doesn't exist) for the api_key/secret:
 ```
 /usr/local/illumio/data/flowlink-api
 ```
-Specify the api_key and secret on a single line:
+Specify the api_key and secret on a single line (exmpale):
 ```
 api_116deb678d0bbfde1 e60ae20b32a5f1aa6a0469eff94c43a0b5dcbff6ad65c89ed083ccb283250965
 ```
 ### Configure Flowlink YAML
-Detailed parameters available here
+Detailed parameters described in:
 ```
 https://product-docs-repo.illumio.com/Tech-Docs/Core/24.2/Install-Upgrade-Admin/out/en/flowlink-configuration-and-usage/flowlink-configuration/configure-yaml.html
 ```
 
-Schema file with all possible configuration options (and backup in cases of accidental deletion) available here:
+Schema file with all possible configuration options (and backup in cases of accidental deletion) available in:
 ```
 /usr/local/illumio/flowlink_config_schema.json
 ```
 
 Cleanup the yaml file and delete unnecessary consumers. 
-`
+```
 /usr/local/illumio/data/config.yaml
-`
+```
 Update values for:
-    pce_addr
-    api_key (location)
-    data_directory
-    org_id
+-------------------------
+|    pce_addr           |
+|    api_key (location) |
+|    data_directory     |
+|    org_id             |
 
 In this example, only netflow and syslog consumers are configured with default values.
+
 Output of config.yaml file:
 ```
 ---
