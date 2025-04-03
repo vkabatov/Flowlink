@@ -29,3 +29,5 @@ NSX can generate IPFIX flow records at either (virtual) Switch or (Distributed) 
 ```
 https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-collectors.html
 ```
+
+    https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-collectors.html
