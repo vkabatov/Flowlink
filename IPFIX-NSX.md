@@ -19,9 +19,9 @@ NSX can generate IPFIX flow records. NSX has different use cases and can be depo
 
 > Note: NSX-managed virtual switch is very similar to the traditional VDS, except it is managed through the NSX Manager, rather than vCenter. The NSX virtual switch and the NSX networks (distributed port groups) are visible in the vCenter, but denoted as "Managed by NSX"
 
-NSX can generate IPFIX flow records at either (virtual) Switch or (Distributed) Firewall. In other words, flow records are generated at either the NSX switch (similar to the VDS) or after the Distributed Firewall processing filters at the VM vNIC level.
+NSX can generate IPFIX flow records at either NSX virtual switch (similar to VDS) or Distributed Firewall (after filters process connections at vNIC level). 
 
-The difference between NSX Firewall IPFIX and NSX Switch IPFIX lies in their function and the level at which they operate in VMware NSX networking and security. Here's a breakdown:
+The difference between NSX Firewall IPFIX and NSX Switch IPFIX lies in their function and the level at which they operate in VMware NSX. Here's a breakdown:
 
 NSX Firewall IPFIX
     Function: Collects flow data after firewall processing.
@@ -37,7 +37,7 @@ NSX Switch IPFIX
     Placement: Works at the NSX Virtual Distributed Switch (VDS) layer.
     Visibility: Provides detailed east-west and north-sout traffic flows to and from VMs.
 
-
+IPFIX flow records can be simultaneously generated at both switch and firewall. 
 
 ## Configure IPFIX in NSX
 
