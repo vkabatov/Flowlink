@@ -49,7 +49,7 @@ https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration
 ```
 https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-profiles.html
 ```
-```
+
 NSX Firewall IPFIX configuration
 
 ```
