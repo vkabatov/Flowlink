@@ -44,7 +44,7 @@ https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-netwo
 ---------------
 Important!
 
-    To enable NetFlow on a vSphere Distributed Switch (VDS) port group for bidirectional traffic monitoring, enable NetFlow on both the port group and the uplink port groups to capture traffic entering and exiting the virtual network. 
+> To enable NetFlow on a vSphere Distributed Switch (VDS) port group for bidirectional traffic monitoring, enable NetFlow on both the port group and the uplink port groups to capture traffic entering and exiting the virtual network. 
 ---------------
 
 
