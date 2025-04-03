@@ -90,11 +90,11 @@ Cleanup the yaml file and delete unnecessary consumers.
 /usr/local/illumio/data/config.yaml
 ```
 Update values for:
-|-----------------------|
-|    pce_addr           |
-|    api_key (location) |
-|    data_directory     |
-|    org_id             |
+|---------------------------|
+|    pce_addr               |
+|    api_key (file location)|
+|    data_directory         |
+|    org_id                 |
 
 In this example, only netflow and syslog consumers are configured with default values.
 
