@@ -18,7 +18,7 @@ https://github.com/alexgoller/illumio-flowlink-umwl-maker
 ## Generate traffic between VMs
 The VMs in this example are L2 adjacent and on the same port group.
 
-SSH into each machine and generate traffic between the VMs.
+SSH into each machine and generate some traffic.
 
 historian<>hmi traffic
 #a-ot-historian:
