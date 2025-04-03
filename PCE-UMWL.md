@@ -53,11 +53,11 @@ netcat -v a-ot-historian.wornbit.io 3389
 ```
 ## Review traffic and the map
 
-The traffic is displayed with source, destination, port/protocol and time.
+Flows are listed with source, destination, port/protocol and time.
 
-It is shown as 'Unknown Policy Decision', since it is not processed by a VEN.
+It is categorized with 'Unknown Policy Decision', since it is not processed by a VEN.
 
 ![Alt text](/Images/pce-traffic.png?raw=true "Unmanaged Workload Traffic")
 
-The traffic between VMs is shown on the map.
+Flows between VMs is displayed on the map.
 ![Alt text](/Images/pce-map.png?raw=true "Unmanaged Workload Map")
