@@ -4,7 +4,6 @@ illumio Flowlink install, config, troubleshoot notes
  Author: Vlad Kabatov, illumio, inc.
  Version 2025.04.02
 ```
-[Flowlink documentation](/FLOWLINK.md)
 ## Quick command reference
 ```
 less /usr/local/illumio/data/flowlink-log
