@@ -42,7 +42,18 @@ https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-netwo
 
 
 ---------------
-Important!!
+Important!
+---------------
 
 To enable NetFlow on a vSphere Distributed Switch (VDS) port group for bidirectional traffic monitoring, enable NetFlow on both the port group and the uplink port groups to capture traffic entering and exiting the virtual network. 
 ---------------
+
+## Use RVTools to export VMs
+For bulk export of vCenter objects, you can download and install RVTools.
+```
+https://www.robware.net/download
+```
+![Alt text](/Images/rvtools.png?raw=true "RVTools vNetwork Tab")
+
+
+Dont forget to create unmanaged workloads in the PCE.
