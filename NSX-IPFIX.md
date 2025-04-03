@@ -1,4 +1,4 @@
-# VDS NetFlow configuration for Flowlink
+# NSX IPFIX configuration for Flowlink
 
 This page provides references to IPFIX configuration in NSX. 
  ```
