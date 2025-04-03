@@ -13,9 +13,9 @@ vSphere VDS NetFlow is a feature of VMware vSphere Distributed Switch (VDS) that
 VDS supports export of unsampled flows to external collectors, including FlowLink.
 
 ### VDS references
-
-> https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-networking-8-0.html
-
+```
+https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vsphere-networking-8-0.html
+```
 
 
 ## Setup
@@ -50,9 +50,9 @@ Important!
 
 ## Use RVTools to export VMs
 For bulk export of vCenter objects, you can download and install RVTools.
-
-> https://www.robware.net/download
-
+```
+https://www.robware.net/download
+```
 ![Alt text](/Images/rvtools.png?raw=true "RVTools vNetwork Tab")
 
 

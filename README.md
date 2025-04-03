@@ -60,13 +60,13 @@ On the PCE, navigate to:
 
 > Access >> Service Accounts >> Add
 
-> Create a service account and copy Authentication Auth Username/Secret
+Create a service account and copy Authentication Auth Username/Secret
 
 Alternatively, to create API Keys:
 
 > Top right-hand corner button with username >> My API Keys >> Add
 
-> Create a file (if doesn't exist) for the api_key/secret:
+Create a file (if doesn't exist) for the api_key/secret:
 ```
 /usr/local/illumio/data/flowlink-api
 ```
