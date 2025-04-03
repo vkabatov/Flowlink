@@ -39,10 +39,12 @@ NSX Switch IPFIX
 
 
 
-## Configure NSX with IPFIX
+## Configure IPFIX in NSX
 
 NSX Switch IPFIX configuration
 > https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-collectors.html
+> https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-profiles.html
 
 NSX Firewall IPFIX configuration
 > https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-firewall-ipfix-collectors.html
+> https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-firewall-ipfix-profiles.html
