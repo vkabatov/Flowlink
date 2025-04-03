@@ -9,17 +9,20 @@ This page provides references to IPFIX configuration in NSX.
 NSX can generate IPFIX flow records. NSX has different use cases and can be depoloyed in several ways:
 
 
-    NSX managing vCenter vlan-backed networking without overlay.
+    NSX manages vCenter vlan-backed networking without overlay.
 
-    NSX managing vCenter networking with overlay.
+    NSX manages vCenter networking with overlay.
 
-    NSX Distributed Firewall (DFW/vDefend) with VLAN-backed or overlay.
+    NSX Distributed Firewall (DFW/vDefend) with NSX managing vCenter VLAN-backed or overlay networking.
 
 --------------
-Note: There is also an option to deploy NSX Disgtributed Firewall (DFW/vDefend). In this scenario, NSX does not manage any of the networking. This scenario is uncommon. Leverage VDS to generate NetFlow Records.
+Note: There is also an option to deploy NSX Distributed Firewall (DFW/vDefend). NSX does not manage any of the networking. This scenario is uncommon. Leverage VDS to generate NetFlow Records.
+--------------
+Note: NSX-managed virtual switch is very similar to the traditional VDS, except it is managed through the NSX Manager, rather than vCenter. The NSX virtual switch and the NSX networks (distributed port groups) are visible in the vCenter, but denoted as "Managed by NSX"
 --------------
 
-IPFIX flow records can be generated at the NSX Firewall 
+NSX can generate IPFIX flow records at either (virtual) Switch or (Distributed) Firewall. In other words, flow records are generated at either the NSX switch (similar to the VDS) or after the Distributed Firewall processing filters at the VM vNIC level.
+
 
 
 
