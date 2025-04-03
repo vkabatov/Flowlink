@@ -45,7 +45,7 @@ VDS supports export of unsampled flows to external collectors, including FlowLin
 Important!
 ---------------
 
-To enable NetFlow on a vSphere Distributed Switch (VDS) port group for bidirectional traffic monitoring, enable NetFlow on both the port group and the uplink port groups to capture traffic entering and exiting the virtual network. 
+    To enable NetFlow on a vSphere Distributed Switch (VDS) port group for bidirectional traffic monitoring, enable NetFlow on both the port group and the uplink port groups to capture traffic entering and exiting the virtual network. 
 ---------------
 
 
@@ -56,5 +56,7 @@ For bulk export of vCenter objects, you can download and install RVTools.
 
 ![Alt text](/Images/rvtools.png?raw=true "RVTools vNetwork Tab")
 
+
+## Unmanaged Workloads
 
 Dont forget to create unmanaged workloads in the PCE.
