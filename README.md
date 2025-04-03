@@ -31,7 +31,7 @@ Download the latest Flowlink RPM package
 > https://product-docs-repo.illumio.com/Tech-Docs/Core/24.4/Install-Upgrade/out/en/flowlink-configuration-and-usage/flowlink-configuration/configure-flowlink.html
 
 Copy flowlink to /tmp and install
-```
+
 cd /tmp
 sudo su
 rpm -ivh illumio-flowlink-x.x.x-yy.x86_64.rpm
