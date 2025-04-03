@@ -1,5 +1,5 @@
 # VM traffic review
-This page shows the VMs represented through unmanaged workloads and the associated traffic.
+This page shows the VMs as unmanaged workloads and the associated traffic.
  
  ```
  Author: Vlad Kabatov, illumio, inc.
