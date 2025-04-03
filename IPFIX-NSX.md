@@ -8,7 +8,6 @@ This page provides references to IPFIX configuration in NSX.
 ## About IPFIX and NSX
 NSX can generate IPFIX flow records. NSX has different use cases and can be depoloyed in several ways:
 
-
     NSX manages vCenter vlan-backed networking without overlay.
 
     NSX manages vCenter networking with overlay.
@@ -20,14 +19,30 @@ NSX can generate IPFIX flow records. NSX has different use cases and can be depo
 
 > Note: NSX-managed virtual switch is very similar to the traditional VDS, except it is managed through the NSX Manager, rather than vCenter. The NSX virtual switch and the NSX networks (distributed port groups) are visible in the vCenter, but denoted as "Managed by NSX"
 
-
 NSX can generate IPFIX flow records at either (virtual) Switch or (Distributed) Firewall. In other words, flow records are generated at either the NSX switch (similar to the VDS) or after the Distributed Firewall processing filters at the VM vNIC level.
 
+The difference between NSX Firewall IPFIX and NSX Switch IPFIX lies in their function and the level at which they operate in VMware NSX networking and security. Here's a breakdown:
+
+NSX Firewall IPFIX
+    Function: Collects flow data after firewall processing.
+    Scope: Provides insight into network traffic that is allowed or denied based on firewall rules.
+    Use Case: Helps with security monitoring, compliance, and identifying anomalies in traffic patterns.
+    Placement: Works at the NSX Distributed Firewall (DFW) layer.
+    Visibility: Shows data for permitted and denied flows, including firewall rule hits.
+
+NSX Switch IPFIX
+    Function: Collects flow data at the switching level before firewall processing.
+    Scope: Focuses on raw traffic flows before any firewall rules are applied.
+    Use Case: Useful for network traffic analysis, troubleshooting, and capacity planning.
+    Placement: Works at the NSX Virtual Distributed Switch (VDS) layer.
+    Visibility: Provides detailed east-west and north-sout traffic flows to and from VMs.
 
 
 
-```
-https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-collectors.html
-```
+## Configure NSX with IPFIX
 
-    https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-collectors.html
+NSX Switch IPFIX configuration
+> https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-switch-ipfix-collectors.html
+
+NSX Firewall IPFIX configuration
+> https://techdocs.broadcom.com/us/en/vmware-cis/nsx/vmware-nsx/4-2/administration-guide/network-monitoring/advanced-monitoring-tools/configure-ipfix/configure-firewall-ipfix-collectors.html
